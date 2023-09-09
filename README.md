@@ -103,7 +103,7 @@ Any and all AlpineJS code leveraging the LiveView-Alpine interoperability should
 It is the code in `x-init` that's triggered each time any of the interpolated LiveView assigns is updated. By relying
 on this behavior the Elixir code can achieve a complete control over the Alpine JS code execution. If used properly
 it is possible to building a complex UX without having to write a single LiveView hook (except maybe the one shown in
-the [Installation](#alpine-related-hooks-(optional))).     
+the [Installation](#alpine-related-hooks-optional)).     
 
 Ex:
 
@@ -175,7 +175,7 @@ element's Alpine code initialized (neither `x-data` nor `x-init` get evaluated o
 Obviously, this results in all state-dependent Alpine JS code in such an element crashing.
 
 To remedy this, it is required to define the hook provided in the
-[installation guide](#alpine-related-hooks-(optional)), and then use it in all items that get prepended or inserted
+[installation guide](#alpine-related-hooks-optional), and then use it in all items that get prepended or inserted
 `:at` a specific position in the stream.
 
 Ex:
